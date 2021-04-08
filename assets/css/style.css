@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f9fbfd;
+}
+
+
+#highscores-btn {
+    color: blueviolet;
+    
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+   background-color: blueviolet;
+   color: white;
+   border: 0px;
+   border-radius: 5px; 
+   margin-left: 45%;
+   padding: 5px;
+   margin-bottom: 5px;
+}
+
+label, textarea {
+    margin-left: 35% ;
+}
+
+.question {
+    visibility: hidden;
+}
+
+#final-score {
+    visibility: hidden;
+}

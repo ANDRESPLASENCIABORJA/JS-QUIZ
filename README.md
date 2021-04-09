@@ -25,4 +25,15 @@ Then inside the html element I also linked my script.js to add the code in javas
 2.- Is also really important to say that owr class question and owr id final score have a display property of hidden in css so we can show them one by one using javascript.
 
 ## Javascript
+1.- At first i defined all the variables that i am going to use in my code
 
+2.- Second thing was defining an addEventListener function with the objective that when our start-quiz-button hears a click, then it will run all the code written inside our while loop that will be like this:
+While our variable index that is equal to 0 is less than or questionsLenght then show our questions.
+
+3.-For our fr loop we are telling app to log our j index that is equal to 0  the numberofAnswers until it hits that variable lenght.
+
+4.-At last with the addEventListener we are telling the answers to show their boolean value with a click on them.
+
+## Live url application link
+
+https://andresplasenciaborja.github.io/JS-QUIZ/

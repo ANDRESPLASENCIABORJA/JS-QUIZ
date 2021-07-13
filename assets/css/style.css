@@ -1,55 +1,85 @@
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
+/* list style and general css paramethers */
+* {
+    list-style: none;
 }
 
-html,
-body,
-.wrapper {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+/* Alignment for the headers */
+h1,
+h2 {
+  text-align: center;
 }
 
-body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
-}
-
-
-#highscores-btn {
-    color: blueviolet;
-    
-}
-
-
-h1, h2, h3 {
-    text-align: center;
-}
-
+/* Alignment for the p tags */
 p {
-    text-align: center;
+  text-align: center;
 }
 
+/* Buttons design settings */
 button {
-   background-color: blueviolet;
-   color: white;
-   border: 0px;
-   border-radius: 5px; 
+  background-color: blueviolet;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 0.5%;
+  position: relative;
+  left: 44.5%;
+}
+
+/* Timer highscores items design */
+.timer-high-scores {
+    display: inline-flex;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+/* clock style */
+.timer-align-center {
+    padding-left: 980px;
+}
+
+/* p tag from the form style */
+.final-score-p {
+    text-align: start;
+}
+
+/* button from the form style */
+.submit-test-btn {
+    position: relative;
+    left: 0;
+}
+
+/* final score section style */
+.final-score-section {
+    position: relative;
+    left: 41.5%;
+}
+
+/* Style for the contactform html */
+.high-scores-buttons {
+    display: inline-flex;
+    position: relative;
+    left: 36.5%; 
+}
+
+#clear-btn {
+    margin-left: 5%;
+}
+
+/* button { 
    margin-left: 45%;
    padding: 5px;
    margin-bottom: 5px;
-}
+} */
 
-label, textarea {
+/* label, textarea {
     margin-left: 35% ;
-}
+} */
 
-.question {
+/* .question {
     visibility: hidden;
-}
+} */
 
-#final-score {
+/* #final-score {
     visibility: hidden;
 } */

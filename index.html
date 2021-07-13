@@ -14,13 +14,17 @@
     <!--Create a header with 2 division to editate in js and css-->
     <header>
         <section class="timer-high-scores">
-            <!--Timer goes in the right top of the screen-->
-            <div class="timer-align-center">⏲</div>
 
             <!--High scores link goes in the left top side of the screen-->
             <div class="highscores-align-left">
-                <a href="/highscores.html" id="highscores-btn">View Highscores</a>
+                <button id="highscores-btn">
+                    <a href="/highscores.html">View Highscores</a>
+                </button>
             </div>
+
+            <!--Timer goes in the right top of the screen-->
+            <div class="timer-align-center">⏲</div>
+
         </section>
     </header>
 
@@ -114,7 +118,7 @@
                             <h3>All done!</h3>
                         </li>
                         <li>
-                            <p id="score">Your final score is:</p>
+                            <p class="final-score-p" id="score">Your final score is:</p>
                         </li>
                         <li>
                             <label for="message">Enter your initials</label>
@@ -123,7 +127,7 @@
                             <textarea name="message" id="initials" cols="0" rows="1"></textarea>
                         </li>
                         <li>
-                            <button id="submit-btn">Submit</button>
+                            <button id="submit-btn" class="submit-test-btn">Submit</button>
                         </li>
                     </ol>
                 </form>

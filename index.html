@@ -2,102 +2,136 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coding Quiz Challenge</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
     <!--Create a header with 2 division to editate in js and css-->
     <header>
-        <!--Timer goes in the right top of the screen-->
-        <div class="timer-align-center"></div>
+        <section class="timer-high-scores">
+            <!--Timer goes in the right top of the screen-->
+            <div class="timer-align-center">⏲</div>
 
-        <!--High scores link goes in the left top side of the screen-->
-        <div class="highscores-align-left">
-            <a href="/highscores.html" id="highscores-btn">View Highscores</a>
-        </div>
+            <!--High scores link goes in the left top side of the screen-->
+            <div class="highscores-align-left">
+                <a href="/highscores.html" id="highscores-btn">View Highscores</a>
+            </div>
+        </section>
     </header>
 
-    <!--Main section-->
+    <!--Main section with the questions on it-->
     <main>
-        <div class="start-game">
-            <h1>Coding Quiz Challenge</h1>
-            <p>Try to answer this coding quiz challenge, keep in mind that every wrong answer will take out 10 seconds
-                of your time, you have 120 seconds!</p>
-            <button id="start-quiz-btn">Start Quiz</button>
-        </div>
+        <section class="start-game-section">
+            <div>
+                <h1>Trading Quiz Challenge</h1>
+                <p>
+                    Try to answer this trading quiz challenge, keep in mind that every
+                    wrong answer will take out 10 seconds of your time, you have 120
+                    seconds!
+                </p>
+                <button id="start-quiz-btn">Start Quiz</button>
+            </div>
+        </section>
 
-        <!--first question and answers in the 4 buttons of it-->
-        <div id="first-question" class="question">
-            <h2>Commonly used data types DO NOT include:</h2>
-            <button class="answer-one-0" data-boolean="false">1.-Strings</button>
-            <button class="answer-two-0" data-boolean="false" >2.-booleans</button>
-            <button class="answer-three-0" data-boolean="true">3.-alerts</button>
-            <button class="answer-four-0" data-boolean="false">4.-numbers</button>
-            <p id="answer-is-0"></p>
-        </div>
+        <section class="questions-section">
+            <!--first question and answers in the 4 buttons of it-->
+            <div id="first-question" class="question">
+                <h2>The folowing invesment instrument is not of variable income:</h2>
+                <button class="answer-one-0" data-boolean="false">Stocks</button>
+                <button class="answer-two-0" data-boolean="false">Currencies</button>
+                <button class="answer-three-0" data-boolean="false">Cryptos</button>
+                <button class="answer-four-0" data-boolean="true">
+                    Tresaury Certificates
+                </button>
+                <p id="answer-is-0"></p>
+            </div>
 
-        <!--Second question-->
-        <div id="second-question" class="question">
-            <h2>The condition in an if/else statement is enclosed within____.</h2>
-            <button class="answer-one-1" data-boolean="false">1.-quotes</button>
-            <button class="answer-two-1" data-boolean="false">2.-curly brackets</button>
-            <button class="answer-three-1" data-boolean="true">3.-parenthesis</button>
-            <button class="answer-four-1" data-boolean="false">4.-square brackets</button>
-            <p id="answer-is-1"></p>
-        </div>
+            <!--Second question-->
+            <div id="second-question" class="question">
+                <h2>
+                    There are three types of trading, which of the following is not one
+                    of them?
+                </h2>
+                <button class="answer-one-1" data-boolean="true">Long term investment</button>
+                <button class="answer-two-1" data-boolean="false">
+                    Scalping
+                </button>
+                <button class="answer-three-1" data-boolean="true">
+                    Swing
+                </button>
+                <button class="answer-four-1" data-boolean="false">
+                    Day Trading
+                </button>
+                <p id="answer-is-1"></p>
+            </div>
 
-        <!--Third question-->
-        <div id="third-question" class="question">
-            <h2>Arrays in javascript can be used to store____.</h2>
-            <button class="answer-one-2" data-boolean="false">1.-numbers and strings</button>
-            <button class="answer-two-2" data-boolean="false">2.-other arrays</button>
-            <button class="answer-three-2" data-boolean="false">3.-booleans</button>
-            <button class="answer-four-2"data-boolean="true">4.-all of the above</button>
-            <p id="answer-is-2"></p>
-        </div>
+            <!--Third question-->
+            <div id="third-question" class="question">
+                <h2>The following is one type of market analysis</h2>
+                <button class="answer-one-2" data-boolean="false">
+                    Data Analysis
+                </button>
+                <button class="answer-two-2" data-boolean="true">
+                    Thecnical Analysis
+                </button>
+                <button class="answer-three-2" data-boolean="false">
+                    Market Analysis
+                </button>
+                <button class="answer-four-2" data-boolean="false">
+                    4.-all of the above
+                </button>
+                <p id="answer-is-2"></p>
+            </div>
 
-        <!--Fourth question-->
-        <div id="fourth-question" class="question">
-            <h2>String values most be enclosed within____
-                when being assigned to variables.
-            </h2>
-            <button class="answer-one-3"data-boolean="false">1.-commas</button>
-            <button class="answer-two-3"data-boolean="false">2.-curly brackets</button>
-            <button class="answer-three-3"data-boolean="true">3.-quotes</button>
-            <button class="answer-four-3"data-boolean="false">4.-parentheses</button>
-            <p id="answer-is-3"></p>
-        </div>
+            <!--Fourth question-->
+            <div id="fourth-question" class="question">
+                <h2>
+                    Which one is the correct meaning of CFD?
+                </h2>
+                <button class="answer-one-3" data-boolean="true">Certificate For Deposit</button>
+                <button class="answer-two-3" data-boolean="false">
+                    Certificate For Daytrading
+                </button>
+                <button class="answer-three-3" data-boolean="false">Currency For Daytrading</button>
+                <button class="answer-four-3" data-boolean="false">
+                    Currency FOREX Domain
+                </button>
+                <p id="answer-is-3"></p>
+            </div>
+        </section>
 
-        <!--Final score-->
-        <div id="final-score">
-            <form>
-                <ol>
-                    <li>
-                        <h3>All done!</h3>
-                    </li>
-                    <li>
-                        <p id="score">Your final score is:</p>
-                    </li>
-                    <li>
-                        <label for="message">Enter your initials</label>
-                    </li>
-                    <li> 
-                        <textarea name="message" id="initials" cols="0" rows="1"></textarea>
-                    </li>
-                    <li> 
-                        <button id="submit-btn">Submit</button>
-                    </li>
-                </ol>
-
-
-            </form>
-
-        </div>
+        <section class="final-score-section">
+            <!--Final score-->
+            <div id="final-score">
+                <form>
+                    <ol>
+                        <li>
+                            <h3>All done!</h3>
+                        </li>
+                        <li>
+                            <p id="score">Your final score is:</p>
+                        </li>
+                        <li>
+                            <label for="message">Enter your initials</label>
+                        </li>
+                        <li>
+                            <textarea name="message" id="initials" cols="0" rows="1"></textarea>
+                        </li>
+                        <li>
+                            <button id="submit-btn">Submit</button>
+                        </li>
+                    </ol>
+                </form>
+            </div>
+        </section>
     </main>
+
+    <!-- Link to the js file -->
     <script src="./assets/js/script.js"></script>
 </body>
 
